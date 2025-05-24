@@ -1,0 +1,15 @@
+{
+  "name": "stockprice-aggregation",
+  "version": "1.0.0",
+  "description": "HTTP microserive for stock price agg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "927622BAD002",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "express": "^5.1.0"
+  }
+}
