@@ -8,13 +8,13 @@ app.use(express.json());
 
 
 const averageCalc = require('./routes/calculateAverage.routes');
-app.use('/api/service', averageCalc);
+app.use('/', averageCalc);
 
 
 
-app.get("/", (req, res) => {
-    res.send("ready!");
-  });
+// app.get("/", (req, res) => {
+//     res.send("ready!");
+//   });
 
 
 app.listen(PORT,()=>{

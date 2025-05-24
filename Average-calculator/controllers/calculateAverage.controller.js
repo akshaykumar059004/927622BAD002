@@ -4,7 +4,7 @@ const express = require("express");
 const VALID_ID= ['p', 'f', 'e', 'r'];
 
 //import the methods from the helper
-const { fetchNums, updateWindow, calcAverage } = require('../helpers/fetchNums.helper');
+const { fetchNums, updateWindow, calculateAverage, windowData } = require('../helpers/fetchNums.helper');
 // const app = express();
 
   exports.calculateAverage=async (req, res) => {
@@ -16,7 +16,7 @@ const { fetchNums, updateWindow, calcAverage } = require('../helpers/fetchNums.h
 
     const newNumbers = await fetchNums(numberid);
     const windowPrevState = updateWindow(newNumbers);
-    const avg = calcAverage(windowData);
+    const avg = calculateAverage(windowData);
 
     res.json({
       windowPrevState,
