@@ -7,8 +7,8 @@ const PORT = 5000;
 app.use(express.json());
 
 
-const averageCalc = require('./controllers/calculateAverage.controller');
-app.use('/api/avgCalc', averageCalc);
+const averageCalc = require('./routes/calculateAverage.routes');
+app.use('/api/service', averageCalc);
 
 
 
